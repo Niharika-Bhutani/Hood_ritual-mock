@@ -139,8 +139,6 @@ body.light .ho1{border-color:rgba(138,92,26,.35);}
 body.light .ho2{border-color:rgba(0,0,0,.1);}
 body.light .ho3{border-color:rgba(138,92,26,.15);}
 body.light .ho4{border-color:rgba(0,0,0,.07);}
-.hero-emblem{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:200px;height:200px;display:flex;align-items:center;justify-content:center;pointer-events:none;z-index:2;}
-.emblem-svg{width:150px;height:150px;animation:embGlow 4s ease-in-out infinite;}
 .hero-content{position:relative;z-index:4;text-align:center;pointer-events:none;}
 .hero-kicker{font-family:var(--M);font-size:.62rem;letter-spacing:.45em;text-transform:uppercase;color:var(--gold);margin-bottom:1.8rem;opacity:0;animation:riseUp .8s .3s var(--ease) forwards;}
 .hero-title{font-family:var(--D);font-size:clamp(5rem,13vw,14rem);line-height:.88;color:var(--acc);letter-spacing:.06em;opacity:0;animation:riseUp .9s .5s var(--ease) forwards;}
@@ -471,7 +469,6 @@ body.light .pdp-also-thumb{background:var(--card);}
 <!-- TOAST STACK -->
 <div id="toast-stack"></div>
 
-
 <!-- ═══════════════════════════════════════
      PDP OVERLAY
 ═══════════════════════════════════════ -->
@@ -556,14 +553,7 @@ body.light .pdp-also-thumb{background:var(--card);}
     <div class="ho ho3"><div class="orbit-node-sm"></div></div>
     <div class="ho ho4"></div>
   </div>
-  <div class="hero-emblem">
-    <svg class="emblem-svg" viewBox="0 0 200 220" fill="none">
-      <path d="M100 12C76 14 56 32 52 54C48 72 56 88 68 96L56 122C40 130 26 146 24 164L176 164C174 146 160 130 144 122L132 96C144 88 152 72 148 54C144 32 124 14 100 12Z" fill="var(--art-fill)"/>
-      <ellipse cx="100" cy="90" rx="20" ry="24" fill="var(--art-void)" opacity=".95"/>
-      <path d="M60 98C54 90 50 94 52 102C48 97 45 102 48 107" stroke="#e8c97a" stroke-width="1.4" fill="none" stroke-linecap="round" opacity=".7"/>
-      <path d="M140 98C146 90 150 94 148 102C152 97 155 102 152 107" stroke="#e8c97a" stroke-width="1.4" fill="none" stroke-linecap="round" opacity=".7"/>
-    </svg>
-  </div>
+
   <div class="hero-content">
     <div class="hero-kicker">SS 2025 — New Season Drop</div>
     <h1 class="hero-title">HOOD<br><em>RITUAL</em></h1>
@@ -801,8 +791,7 @@ const PRODUCTS = [
     sizes:['XS','S','M','L','XL','XXL'],
     colors:['#1a1a1e','#2a2a30','#3a3a20'],
     specs:[['Material','400 GSM Cotton-Poly Fleece'],['Fit','Oversized / Relaxed'],['Print','Screen Print — Front & Back'],['Hood','Two-Panel Structured'],['Cuffs','Ribbed, Reinforced'],['Dispatch','Ships in 48 hours']],
-    imgSrc:'outlaw1.jpeg',
-     /* e.g. 'images/outlaws-ritual.jpg' */
+    imgSrc:'outlaw1.jpeg', /* e.g. 'images/outlaws-ritual.jpg' */
     art:`<text x="140" y="52" text-anchor="middle" font-family="serif" font-size="46" font-weight="900" fill="#e8c97a" letter-spacing="2">OUTLAWS</text>
       <rect x="30" y="55" width="3" height="16" rx="1.5" fill="#e8c97a" opacity=".9"/><ellipse cx="31.5" cy="73" rx="3" ry="4" fill="#e8c97a" opacity=".7"/>
       <rect x="60" y="55" width="3" height="11" rx="1.5" fill="#e8c97a" opacity=".9"/><ellipse cx="61.5" cy="68" rx="3" ry="3.5" fill="#e8c97a" opacity=".7"/>
@@ -831,7 +820,7 @@ const PRODUCTS = [
     desc:'No graphics, no noise. The Shadow Hoodie is pure construction — 400 GSM fleece, a perfectly structured hood, and nothing else. For the ones who understand that silence is a statement.',
     sizes:['XS','S','M','L','XL','XXL'], colors:['#1a1a1e','#2c2c30'],
     specs:[['Material','400 GSM Cotton Fleece'],['Fit','Oversized'],['Graphics','Clean — No Print'],['Hood','Structured Two-Panel'],['Dispatch','Ships in 48 hours']],
-    imgSrc:'outlaw2.jpeg',
+    imgSrc:'outlaw1.jpeg',
     art:`<path d="M80 10C58 12 44 28 44 48C44 64 52 76 64 82L56 106C42 112 28 124 26 140L134 140C132 124 118 112 104 106L96 82C108 76 116 64 116 48C116 28 102 12 80 10Z" fill="var(--art-fill)" opacity=".22"/>
       <ellipse cx="80" cy="50" rx="16" ry="18" fill="var(--art-void)" opacity=".9"/>
       <path d="M64 82C58 75 54 79 56 86C52 82 49 87 52 92" stroke="#e8c97a" stroke-width="1.4" fill="none" stroke-linecap="round" opacity=".7"/>
@@ -845,7 +834,7 @@ const PRODUCTS = [
     desc:'The Covenant Hoodie carries the ritual symbol — a five-pointed emblem screen-printed at the chest. 400 GSM heavyweight fleece. Structured hood. Oversized cut.',
     sizes:['S','M','L','XL','XXL'], colors:['#1a1a1e','#14141a'],
     specs:[['Material','400 GSM Cotton Fleece'],['Fit','Oversized'],['Print','Chest Screen Print'],['Hood','Structured Two-Panel'],['Dispatch','Ships in 48 hours']],
-    imgSrc:'outlaw3.jpeg',
+    imgSrc:'outlaw2.jpeg',
     art:`<circle cx="80" cy="80" r="58" fill="none" stroke="var(--art-fill)" stroke-width="1" opacity=".2"/>
       <circle cx="80" cy="80" r="40" fill="none" stroke="var(--art-fill)" stroke-width=".7" opacity=".14"/>
       <path d="M80 50L86 68L106 68L91 80L97 98L80 88L63 98L69 80L54 68L74 68Z" fill="#e8c97a" opacity=".65"/>
@@ -858,7 +847,7 @@ const PRODUCTS = [
     desc:'The Phantom is our off-white statement. Same 400 GSM construction, minimal geometric chest print, oversized cut — in a wash that sits between cream and chalk.',
     sizes:['XS','S','M','L','XL','XXL'], colors:['#e8e4dc','#dedad2'],
     specs:[['Material','400 GSM Cotton Fleece'],['Color','Off-White / Chalk'],['Print','Minimal Geometric'],['Fit','Oversized'],['Dispatch','Ships in 48 hours']],
-    imgSrc:'outlaw4.jpeg',
+    imgSrc:'outlaw3.jpeg',
     art:`<rect x="26" y="26" width="108" height="108" fill="none" stroke="var(--art-fill)" stroke-width=".8" opacity=".18"/>
       <rect x="40" y="40" width="80" height="80" fill="none" stroke="#e8c97a" stroke-width=".6" opacity=".35"/>
       <line x1="26" y1="26" x2="134" y2="134" stroke="var(--art-fill)" stroke-width=".5" opacity=".1"/>
@@ -873,7 +862,7 @@ const PRODUCTS = [
     desc:'The Cipher Zip is our full-zip hoodie in washed charcoal. Same heavyweight fleece as our pullovers, same structured hood — but with YKK zipper hardware and zippered kangaroo pockets.',
     sizes:['S','M','L','XL','XXL'], colors:['#28282e','#1e1e24'],
     specs:[['Material','400 GSM Cotton Fleece'],['Style','Full-Zip'],['Color','Washed Charcoal'],['Zipper','YKK Hardware'],['Dispatch','Ships in 48 hours']],
-    imgSrc:'outlaw5.jpeg',
+    imgSrc:'outlaw4.jpeg',
     art:`<path d="M30 80L80 30L130 80L80 130Z" fill="none" stroke="var(--art-fill)" stroke-width="1" opacity=".18"/>
       <path d="M44 80L80 44L116 80L80 116Z" fill="none" stroke="#e8c97a" stroke-width=".6" opacity=".28"/>
       <circle cx="80" cy="80" r="16" fill="#e8c97a" opacity=".22"/>
@@ -887,7 +876,7 @@ const PRODUCTS = [
     desc:'The Void Sweatpant is built from heavy French terry — 320 GSM, brushed on the inside. Elastic waist with drawstring, zippered side pockets, ribbed cuffs.',
     sizes:['XS','S','M','L','XL','XXL'], colors:['#1a1a1e','#14141a','#20201a'],
     specs:[['Material','320 GSM French Terry'],['Fit','Tapered'],['Pockets','Zippered Side'],['Waist','Elastic + Drawstring'],['Cuffs','Ribbed'],['Dispatch','Ships in 48 hours']],
-    imgSrc:'outlaw6.jpeg',
+    imgSrc:'outlaw5.jpeg',
     art:`<rect x="50" y="20" width="60" height="130" rx="6" fill="var(--art-fill)" opacity=".16"/>
       <rect x="52" y="22" width="25" height="128" rx="4" fill="var(--art-fill)" opacity=".1"/>
       <rect x="83" y="22" width="25" height="128" rx="4" fill="var(--art-fill)" opacity=".1"/>
@@ -901,7 +890,7 @@ const PRODUCTS = [
     desc:'Six-panel structured cap in washed black canvas. Flat brim, embroidered Hood Ritual emblem, adjustable snapback. One size. Pairs with everything in the collection.',
     sizes:['One Size'], colors:['#1a1a1e','#2a2020'],
     specs:[['Material','Canvas — Washed'],['Style','Six-Panel, Structured'],['Brim','Flat'],['Closure','Snapback'],['Embroidery','Hood Ritual Emblem'],['Dispatch','Ships in 48 hours']],
-    imgSrc:'',
+    imgSrc:'outlaw6.jpeg',
     art:`<path d="M25 90C25 60 50 40 80 40C110 40 135 60 135 90L135 110L100 120L80 125L60 120L25 110Z" fill="var(--art-fill)" opacity=".2"/>
       <path d="M25 90L135 90" stroke="var(--art-fill)" stroke-width=".6" opacity=".2"/>
       <ellipse cx="80" cy="72" rx="18" ry="14" fill="none" stroke="#e8c97a" stroke-width="1" opacity=".5"/>
